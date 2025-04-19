@@ -1,0 +1,103 @@
+/* Frontend Styles for Achievements Display */
+
+.ach-achievements-container {
+  margin: 20px 0;
+  font-family: "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+}
+
+.swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2271b1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2271b1;
+}
+
+.ach-achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+  background: #f9f8fd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.ach-achievement-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ach-achievement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ach-achievement-icon i {
+  font-size: 35px;
+  color: #2271b1;
+}
+
+.ach-achievement-content {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ach-achievement-name {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ach-achievement-category {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.ach-achievement-date {
+  font-size: 13px;
+  color: #999;
+  margin-top: auto;
+}
+
+.ach-empty-message {
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .ach-achievement-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ach-achievement-icon i {
+    font-size: 30px;
+  }
+
+  .ach-achievement-name {
+    font-size: 16px;
+  }
+}
